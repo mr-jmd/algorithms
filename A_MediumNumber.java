@@ -10,8 +10,7 @@ public class A_MediumNumber {
         StringTokenizer st;
 
         public FastReader() {
-            br = new BufferedReader(
-                    new InputStreamReader(System.in));
+            br = new BufferedReader(new InputStreamReader(System.in));
         }
 
         String next() {
@@ -52,19 +51,19 @@ public class A_MediumNumber {
         FastReader s = new FastReader();
 
         int n = s.nextInt();
-        
+
         for (int i = 0; i < n; i++) {
-            
+
             int[] array = new int[3];
- 
+
             for (int j = 0; j < array.length; j++) {
                 array[j] = s.nextInt();
             }
- 
+
             Arrays.sort(array);
- 
+
             System.out.println(array[1]);
- 
+
         }
     }
 
